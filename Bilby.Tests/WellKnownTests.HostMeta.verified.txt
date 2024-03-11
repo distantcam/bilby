@@ -1,0 +1,28 @@
+﻿{
+  Version: 1.1,
+  Status: 200 OK,
+  Headers: {
+    Link: <http://localhost/oauth/authorize>; rel="authorization_endpoint",<http://localhost/oauth/token>; rel="token_endpoint",<http://localhost/micropub>; rel="micropub",
+    Server: Bilby
+  },
+  Content: {
+    Headers: {
+      Content-Length: 196,
+      Content-Type: application/xrd+xml; charset=utf-8
+    },
+    Value: {
+      ?xml: {
+        @version: 1.0,
+        @encoding: UTF-8
+      },
+      XRD: {
+        @xmlns: http://docs.oasis-open.org/ns/xri/xrd-1.0,
+        Link: {
+          @rel: lrdd,
+          @template: https://localhost/.well-known/webfinger?resource={uri}
+        }
+      }
+    }
+  },
+  Request: http://localhost/.well-known/host-meta
+}

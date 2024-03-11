@@ -1,0 +1,22 @@
+﻿{
+  Version: 1.1,
+  Status: 400 Bad Request,
+  Headers: {
+    Link: <http://localhost/oauth/authorize>; rel="authorization_endpoint",<http://localhost/oauth/token>; rel="token_endpoint",<http://localhost/micropub>; rel="micropub",
+    Server: Bilby
+  },
+  RequestMessage: {
+    Method: POST,
+    Uri: http://localhost/api/post,
+    Headers: {
+      x-testing: true
+    },
+    Content: {
+      Headers: {
+        Content-Length: 0,
+        Content-Type: application/x-www-form-urlencoded
+      },
+      Value: 
+    }
+  }
+}

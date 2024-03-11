@@ -1,0 +1,33 @@
+﻿{
+  Version: 1.1,
+  Status: 200 OK,
+  Headers: {
+    Link: <http://localhost/oauth/authorize>; rel="authorization_endpoint",<http://localhost/oauth/token>; rel="token_endpoint",<http://localhost/micropub>; rel="micropub",
+    Server: Bilby
+  },
+  Content: {
+    Headers: {
+      Content-Type: application/json; charset=utf-8
+    },
+    Value: {
+      client_id: Guid_1,
+      client_secret: Guid_2,
+      id: {Scrubbed},
+      name: IceCubesApp,
+      redirect_uri: icecubesapp://,
+      website: https://github.com/Dimillian/IceCubesApp
+    }
+  },
+  Request: {
+    Method: POST,
+    Uri: {
+      Path: http://localhost/api/v1/apps,
+      Query: {
+        client_name: IceCubesApp,
+        redirect_uris: icecubesapp://,
+        scopes: read write follow push,
+        website: https://github.com/Dimillian/IceCubesApp
+      }
+    }
+  }
+}

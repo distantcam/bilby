@@ -1,0 +1,34 @@
+﻿{
+  Version: 1.1,
+  Status: 200 OK,
+  Headers: {
+    Link: <http://localhost/oauth/authorize>; rel="authorization_endpoint",<http://localhost/oauth/token>; rel="token_endpoint",<http://localhost/micropub>; rel="micropub",
+    Server: Bilby
+  },
+  Content: {
+    Headers: {
+      Content-Type: application/json; charset=utf-8
+    },
+    Value: {
+      openRegistrations: false,
+      protocols: [
+        activitypub
+      ],
+      services: {},
+      software: {
+        name: bilby,
+        version: 0.0.0
+      },
+      usage: {
+        localPosts: 0,
+        users: {
+          activeHalfyear: 1,
+          activeMonth: 1,
+          total: 1
+        }
+      },
+      version: 2.0
+    }
+  },
+  Request: http://localhost/nodeinfo/2.0.json
+}

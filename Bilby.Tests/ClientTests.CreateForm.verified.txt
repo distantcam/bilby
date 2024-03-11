@@ -1,0 +1,23 @@
+﻿{
+  Version: 1.1,
+  Status: 201 Created,
+  Headers: {
+    Link: <http://localhost/oauth/authorize>; rel="authorization_endpoint",<http://localhost/oauth/token>; rel="token_endpoint",<http://localhost/micropub>; rel="micropub",
+    Location: https://localhost/post/SCRUBBED_ID,
+    Server: Bilby
+  },
+  RequestMessage: {
+    Method: POST,
+    Uri: http://localhost/api/post,
+    Headers: {
+      x-testing: true
+    },
+    Content: {
+      Headers: {
+        Content-Length: 40,
+        Content-Type: application/x-www-form-urlencoded
+      },
+      Value: content=%3Cp%3ECreateForm+Test%3C%2Fp%3E
+    }
+  }
+}

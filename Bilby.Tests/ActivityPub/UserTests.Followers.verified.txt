@@ -1,0 +1,26 @@
+﻿{
+  Version: 1.1,
+  Status: 200 OK,
+  Headers: {
+    Link: <http://localhost/oauth/authorize>; rel="authorization_endpoint",<http://localhost/oauth/token>; rel="token_endpoint",<http://localhost/micropub>; rel="micropub",
+    Server: Bilby
+  },
+  Content: {
+    Headers: {
+      Content-Type: application/activity+json; charset=utf-8
+    },
+    Value: {
+      @context: https://www.w3.org/ns/activitystreams,
+      first: https://localhost/followers?page=1,
+      id: https://localhost/followers,
+      totalItems: 0,
+      type: OrderedCollection
+    }
+  },
+  Request: {
+    Uri: http://localhost/followers,
+    Headers: {
+      Accept: application/activity+json
+    }
+  }
+}

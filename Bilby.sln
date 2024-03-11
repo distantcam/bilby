@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{CF759FDB-378A-49E5-B95A-DDC9B738866B}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
+		docker-compose.yml = docker-compose.yml
+		global.json = global.json
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bilby", "Bilby\Bilby.csproj", "{158431A9-66F9-4E07-84C5-3C3F8E1A6927}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bilby.Tests", "Bilby.Tests\Bilby.Tests.csproj", "{2D3CE3D9-2B23-41F6-88D3-A812122F97EF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{158431A9-66F9-4E07-84C5-3C3F8E1A6927}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{158431A9-66F9-4E07-84C5-3C3F8E1A6927}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{158431A9-66F9-4E07-84C5-3C3F8E1A6927}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{158431A9-66F9-4E07-84C5-3C3F8E1A6927}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D3CE3D9-2B23-41F6-88D3-A812122F97EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D3CE3D9-2B23-41F6-88D3-A812122F97EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D3CE3D9-2B23-41F6-88D3-A812122F97EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D3CE3D9-2B23-41F6-88D3-A812122F97EF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CD779D7D-7D29-40BE-B6A9-48B58298170E}
+	EndGlobalSection
+EndGlobal

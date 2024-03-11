@@ -1,0 +1,16 @@
+﻿{
+  Version: 1.1,
+  Status: 404 Not Found,
+  Headers: {
+    Link: <http://localhost/oauth/authorize>; rel="authorization_endpoint",<http://localhost/oauth/token>; rel="token_endpoint",<http://localhost/micropub>; rel="micropub",
+    Server: Bilby
+  },
+  RequestMessage: {
+    Uri: {
+      Path: http://localhost/.well-known/webfinger,
+      Query: {
+        resource: acct:Guid_1@localhost
+      }
+    }
+  }
+}

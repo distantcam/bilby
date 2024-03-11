@@ -1,0 +1,27 @@
+﻿{
+  Version: 1.1,
+  Status: 200 OK,
+  Headers: {
+    Link: <http://localhost/oauth/authorize>; rel="authorization_endpoint",<http://localhost/oauth/token>; rel="token_endpoint",<http://localhost/micropub>; rel="micropub",
+    Server: Bilby
+  },
+  Content: {
+    Headers: {
+      Content-Type: application/activity+json; charset=utf-8
+    },
+    Value: {
+      @context: https://www.w3.org/ns/activitystreams,
+      first: https://localhost/outbox?page=true,
+      id: https://localhost/outbox,
+      last: https://localhost/outbox?min_id=0&page=true,
+      totalItems: 0,
+      type: OrderedCollection
+    }
+  },
+  Request: {
+    Uri: http://localhost/outbox,
+    Headers: {
+      Accept: application/activity+json
+    }
+  }
+}

@@ -1,0 +1,23 @@
+﻿{
+  Version: 1.1,
+  Status: 200 OK,
+  Headers: {
+    Link: <http://localhost/oauth/authorize>; rel="authorization_endpoint",<http://localhost/oauth/token>; rel="token_endpoint",<http://localhost/micropub>; rel="micropub",
+    Server: Bilby
+  },
+  Content: {
+    Headers: {
+      Content-Type: application/json; charset=utf-8
+    },
+    Value: {
+      name: FullLoginFlow,
+      website: bilby.io
+    }
+  },
+  Request: {
+    Uri: http://localhost/api/v1/apps/verify_credentials,
+    Headers: {
+      Authorization: {Scrubbed}
+    }
+  }
+}

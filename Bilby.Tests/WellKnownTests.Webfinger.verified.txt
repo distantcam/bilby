@@ -1,0 +1,39 @@
+﻿{
+  Version: 1.1,
+  Status: 200 OK,
+  Headers: {
+    Link: <http://localhost/oauth/authorize>; rel="authorization_endpoint",<http://localhost/oauth/token>; rel="token_endpoint",<http://localhost/micropub>; rel="micropub",
+    Server: Bilby
+  },
+  Content: {
+    Headers: {
+      Content-Type: application/json; charset=utf-8
+    },
+    Value: {
+      aliases: [
+        https://localhost/@bilby
+      ],
+      links: [
+        {
+          href: https://localhost/@bilby,
+          rel: self,
+          type: application/activity+json
+        },
+        {
+          href: https://localhost/images/avatar.png,
+          rel: http://webfinger.net/rel/avatar,
+          type: image/jpeg
+        }
+      ],
+      subject: acct:bilby@localhost
+    }
+  },
+  Request: {
+    Uri: {
+      Path: http://localhost/.well-known/webfinger,
+      Query: {
+        resource: acct:bilby@localhost
+      }
+    }
+  }
+}

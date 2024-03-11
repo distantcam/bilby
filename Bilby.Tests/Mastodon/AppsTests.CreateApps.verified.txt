@@ -1,0 +1,32 @@
+﻿{
+  Version: 1.1,
+  Status: 200 OK,
+  Headers: {
+    Link: <http://localhost/oauth/authorize>; rel="authorization_endpoint",<http://localhost/oauth/token>; rel="token_endpoint",<http://localhost/micropub>; rel="micropub",
+    Server: Bilby
+  },
+  Content: {
+    Headers: {
+      Content-Type: application/json; charset=utf-8
+    },
+    Value: {
+      client_id: Guid_1,
+      client_secret: Guid_2,
+      id: {Scrubbed},
+      name: CreateApps,
+      redirect_uri: urn:ietf:wg:oauth:2.0:oob,
+      website: bilby.io
+    }
+  },
+  Request: {
+    Method: POST,
+    Uri: http://localhost/api/v1/apps,
+    Content: {
+      Headers: {
+        Content-Length: 107,
+        Content-Type: application/x-www-form-urlencoded
+      },
+      Value: client_name=CreateApps&redirect_uris=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&scopes=read+write&website=bilby.io
+    }
+  }
+}

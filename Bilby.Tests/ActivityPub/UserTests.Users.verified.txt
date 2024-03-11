@@ -1,0 +1,40 @@
+﻿{
+  Version: 1.1,
+  Status: 200 OK,
+  Headers: {
+    Link: <http://localhost/oauth/authorize>; rel="authorization_endpoint",<http://localhost/oauth/token>; rel="token_endpoint",<http://localhost/micropub>; rel="micropub",
+    Server: Bilby
+  },
+  Content: {
+    Headers: {
+      Content-Type: application/activity+json; charset=utf-8
+    },
+    Value: {
+      @context: [
+        https://www.w3.org/ns/activitystreams,
+        https://w3id.org/security/v1
+      ],
+      discoverable: true,
+      endpoints: {
+        sharedInbox: https://localhost/inbox
+      },
+      followers: https://localhost/followers,
+      following: https://localhost/following,
+      icon: https://localhost/images/avatar.png,
+      id: https://localhost/@bilby,
+      inbox: https://localhost/inbox,
+      manuallyApprovesFollowers: false,
+      name: bilby,
+      outbox: https://localhost/outbox,
+      preferredUsername: bilby,
+      summary: <p>A small single user activitypub implementation.</p>,
+      type: Person
+    }
+  },
+  Request: {
+    Uri: http://localhost/@bilby,
+    Headers: {
+      Accept: application/activity+json
+    }
+  }
+}
